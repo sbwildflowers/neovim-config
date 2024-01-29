@@ -11,7 +11,7 @@ return require('packer').startup(function(use)
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
-  use {'morhetz/gruvbox', as = "gruvbox", config = function() vim.cmd.colorscheme("gruvbox") end }
+  use {'rebelot/kanagawa.nvim', as = "kanagawa", config = function() vim.cmd.colorscheme("kanagawa") end }
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use "nvim-lua/plenary.nvim" -- don't forget to add this one if you don't have it yet!
   use {
@@ -22,6 +22,8 @@ return require('packer').startup(function(use)
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
   use('preservim/nerdtree')
+  use('sheerun/vim-polyglot')
+  use('coc-extensions/coc-svelte')
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v3.x',
@@ -36,6 +38,8 @@ return require('packer').startup(function(use)
 		  {'hrsh7th/nvim-cmp'},
 		  {'hrsh7th/cmp-nvim-lsp'},
 		  {'L3MON4D3/LuaSnip'},
+		  {'windwp/nvim-autopairs'},
+		  {'windwp/nvim-ts-autotag'},
 	  }
   }
 end)

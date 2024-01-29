@@ -44,3 +44,21 @@ cmp.setup({
     ['<C-Space>'] = cmp.mapping.complete(),
   }),
 })
+
+local cmp_autopairs = require('nvim-autopairs.completion.cmp')
+cmp.event:on(
+  'confirm_done',
+  cmp_autopairs.on_confirm_done()
+)
+
+require('nvim-autopairs').setup({
+  map_cr = true,
+  map_complete = true,
+  auto_select = true,
+  check_ts = true
+})
+
+require('nvim-treesitter.configs').setup({
+    autotag = { enable = true }
+})
+
