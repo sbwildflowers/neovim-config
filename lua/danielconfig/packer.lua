@@ -24,6 +24,7 @@ return require('packer').startup(function(use)
   use('preservim/nerdtree')
   use('sheerun/vim-polyglot')
   use('coc-extensions/coc-svelte')
+  use('preservim/nerdcommenter')
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v3.x',
