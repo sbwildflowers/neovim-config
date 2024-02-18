@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/start/coc-svelte",
     url = "https://github.com/coc-extensions/coc-svelte"
   },
+  ["git-worktree.nvim"] = {
+    loaded = true,
+    path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/start/git-worktree.nvim",
+    url = "https://github.com/ThePrimeagen/git-worktree.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -104,6 +109,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+  },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -150,6 +160,12 @@ _G.packer_plugins = {
     path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
     url = "https://github.com/windwp/nvim-ts-autotag"
   },
+  ["nvim-web-devicons"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -164,6 +180,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["twilight.nvim"] = {
+    loaded = true,
+    path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/start/twilight.nvim",
+    url = "https://github.com/folke/twilight.nvim"
   },
   undotree = {
     loaded = true,
