@@ -27,6 +27,10 @@ require('mason-lspconfig').setup({
   }
 })
 
+require('lspconfig').html.setup({
+  filetypes = { "html", "templ"}
+})
+
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
 
@@ -37,6 +41,7 @@ cmp.setup({
     {name = 'nvim_lua'},
   },
   formatting = lsp_zero.cmp_format(),
+  preselect = cmp.PreselectMode.None,
   mapping = cmp.mapping.preset.insert({
     ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
     ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
@@ -58,7 +63,9 @@ require('nvim-autopairs').setup({
   check_ts = true
 })
 
-require('nvim-treesitter.configs').setup({
-    autotag = { enable = true }
+require('nvim-ts-autotag').setup({
+  filetypes = {
+    'templ'
+  }
 })
 

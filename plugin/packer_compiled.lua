@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/start/coc-svelte",
     url = "https://github.com/coc-extensions/coc-svelte"
   },
+  ["diffview.nvim"] = {
+    loaded = true,
+    path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/start/diffview.nvim",
+    url = "https://github.com/sindrets/diffview.nvim"
+  },
   ["git-worktree.nvim"] = {
     loaded = true,
     path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/start/git-worktree.nvim",
@@ -114,6 +119,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -180,6 +190,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["trouble.nvim"] = {
+    loaded = true,
+    path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/start/trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
   },
   ["twilight.nvim"] = {
     loaded = true,

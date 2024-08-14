@@ -26,6 +26,7 @@ return require('packer').startup(function(use)
   use('sheerun/vim-polyglot')
   use('coc-extensions/coc-svelte')
   use('preservim/nerdcommenter')
+  use('sindrets/diffview.nvim')
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v3.x',
@@ -49,4 +50,11 @@ return require('packer').startup(function(use)
 	  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
   use('folke/twilight.nvim')
+  use({
+		'iamcco/markdown-preview.nvim', run = function() vim.fn['mkdp#util#install']() end
+	})
+  use({
+		'folke/trouble.nvim',
+		requires = { {'nvim-tree/nvim-web-devicons'} }
+	})
 end)
