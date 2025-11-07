@@ -31,13 +31,9 @@ return require('packer').startup(function(use)
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v3.x',
 	  requires = {
-		  --- Uncomment these if you want to manage LSP servers from neovim
-		  {'williamboman/mason.nvim'},
-		  {'williamboman/mason-lspconfig.nvim'},
-
-		  -- LSP Support
 		  {'neovim/nvim-lspconfig'},
-		  -- Autocompletion
+		  {'williamboman/mason.nvim', tag='v1.11.0'},
+		  {'williamboman/mason-lspconfig.nvim', tag='v1.32.0'},
 		  {'hrsh7th/nvim-cmp'},
 		  {'hrsh7th/cmp-nvim-lsp'},
 		  {'L3MON4D3/LuaSnip'},
@@ -57,4 +53,8 @@ return require('packer').startup(function(use)
 		'folke/trouble.nvim',
 		requires = { {'nvim-tree/nvim-web-devicons'} }
 	})
+  use('mg979/vim-visual-multi')
+  use('sbwildflowers/nvim-prompt')
+  use('preservim/vim-pencil')
+  --use('dense-analysis/ale')
 end)

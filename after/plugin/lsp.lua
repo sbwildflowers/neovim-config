@@ -15,9 +15,16 @@ lsp_zero.on_attach(function(client, bufnr)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
+
+--local lua_opts = lsp_zero.nvim_lua_ls()
+--local lspconfig = require('lspconfig')
+--lspconfig.lua_ls.setup(lua_opts)
+--lspconfig.gopls.setup(lua_opts)
+--lspconfig.svelte.setup(lua_opts)
+
 require('mason').setup({})
-require('mason-lspconfig').setup({
-  ensure_installed = {'tsserver' },
+require('mason-lspconfig').setup {
+  ensure_installed = {'ts_ls'},
   handlers = {
     lsp_zero.default_setup,
     lua_ls = function()
@@ -25,11 +32,13 @@ require('mason-lspconfig').setup({
       require('lspconfig').lua_ls.setup(lua_opts)
     end,
   }
-})
+}
 
 require('lspconfig').html.setup({
   filetypes = { "html", "templ"}
 })
+
+
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
@@ -68,4 +77,3 @@ require('nvim-ts-autotag').setup({
     'templ'
   }
 })
-

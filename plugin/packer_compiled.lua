@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/danielmcleod/.cache/nvim/packer_hererocks/2.1.1700008891/share/lua/5.1/?.lua;/Users/danielmcleod/.cache/nvim/packer_hererocks/2.1.1700008891/share/lua/5.1/?/init.lua;/Users/danielmcleod/.cache/nvim/packer_hererocks/2.1.1700008891/lib/luarocks/rocks-5.1/?.lua;/Users/danielmcleod/.cache/nvim/packer_hererocks/2.1.1700008891/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/danielmcleod/.cache/nvim/packer_hererocks/2.1.1700008891/lib/lua/5.1/?.so"
+local package_path_str = "/Users/danielmcleod/.cache/nvim/packer_hererocks/2.1.1727870382/share/lua/5.1/?.lua;/Users/danielmcleod/.cache/nvim/packer_hererocks/2.1.1727870382/share/lua/5.1/?/init.lua;/Users/danielmcleod/.cache/nvim/packer_hererocks/2.1.1727870382/lib/luarocks/rocks-5.1/?.lua;/Users/danielmcleod/.cache/nvim/packer_hererocks/2.1.1727870382/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/danielmcleod/.cache/nvim/packer_hererocks/2.1.1727870382/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -160,6 +160,11 @@ _G.packer_plugins = {
     path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-prompt"] = {
+    loaded = true,
+    path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/start/nvim-prompt",
+    url = "https://github.com/sbwildflowers/nvim-prompt"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
@@ -211,10 +216,20 @@ _G.packer_plugins = {
     path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
+  ["vim-pencil"] = {
+    loaded = true,
+    path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/start/vim-pencil",
+    url = "https://github.com/preservim/vim-pencil"
+  },
   ["vim-polyglot"] = {
     loaded = true,
     path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/start/vim-polyglot",
     url = "https://github.com/sheerun/vim-polyglot"
+  },
+  ["vim-visual-multi"] = {
+    loaded = true,
+    path = "/Users/danielmcleod/.local/share/nvim/site/pack/packer/start/vim-visual-multi",
+    url = "https://github.com/mg979/vim-visual-multi"
   }
 }
 
